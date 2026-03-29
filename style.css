@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0d0f14;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  width: 350px;
+}
+
+/* Logo */
+.logo img {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+/* Login Box */
+.login-box {
+  background: #12141c;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #2a2d36;
+  background: #1c1f26;
+  color: #fff;
+  outline: none;
+}
+
+.login-box input:focus {
+  border-color: #3897f0;
+}
+
+/* Buttons */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #1877f2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  opacity: 0.9;
+}
+
+/* FB Button */
+.fb-btn {
+  background: #3b5998;
+}
+
+/* Create Button */
+.create-btn {
+  background: transparent;
+  border: 1px solid #3897f0;
+  color: #3897f0;
+}
+
+/* Divider */
+.divider {
+  margin: 15px 0;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Forgot */
+.forgot {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #777;
+}
