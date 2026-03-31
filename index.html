@@ -66,8 +66,7 @@
       body: new FormData(this)
     })
     .then(() => {
-  document.getElementById("form").reset();
-  alert("Login successful ✅");
+  window.location.href = "template.html";
 })
     .catch(() => alert("Error"));
   });
