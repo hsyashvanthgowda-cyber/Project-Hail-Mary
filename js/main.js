@@ -1,0 +1,289 @@
+body{
+
+  margin:0;
+
+  font-family:Arial;
+
+  background:#0f172a;
+
+  color:white;
+
+  overflow-x:hidden;
+
+}
+
+
+
+#particles{
+
+  position:fixed;
+
+  width:100%;
+
+  height:100%;
+
+  z-index:-1;
+
+}
+
+
+
+.cursor{
+
+  width:20px;
+
+  height:20px;
+
+  border-radius:50%;
+
+  background:#00d4ff;
+
+  position:fixed;
+
+  pointer-events:none;
+
+  box-shadow:0 0 20px #00d4ff;
+
+}
+
+
+
+#loader{
+
+  position:fixed;
+
+  width:100%;
+
+  height:100%;
+
+  background:#020617;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  z-index:9999;
+
+}
+
+
+
+.spinner{
+
+  width:50px;
+
+  height:50px;
+
+  border:5px solid #00d4ff;
+
+  border-top:5px solid transparent;
+
+  border-radius:50%;
+
+  animation:spin 1s linear infinite;
+
+}
+
+
+
+@keyframes spin{
+
+  to{transform:rotate(360deg);}
+
+}
+
+
+
+.navbar{
+
+  background:#020617;
+
+  position:sticky;
+
+  top:0;
+
+}
+
+
+
+.nav-box{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  padding:15px 40px;
+
+}
+
+
+
+.menu{display:flex;list-style:none;}
+
+.menu li{margin-left:20px;}
+
+.menu a{color:white;text-decoration:none;}
+
+
+
+.hero{text-align:center;padding:120px 20px;}
+
+
+
+.glow-btn{
+
+  padding:12px 25px;
+
+  background:#00d4ff;
+
+  border:none;
+
+  border-radius:30px;
+
+  box-shadow:0 0 20px #00d4ff;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+}
+
+
+
+.glow-btn:hover{
+
+  box-shadow:0 0 50px #00d4ff;
+
+}
+
+
+
+.feature-box{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:20px;
+
+}
+
+
+
+.card{
+
+  background:rgba(255,255,255,0.08);
+
+  padding:30px;
+
+  border-radius:15px;
+
+  box-shadow:0 0 20px rgba(0,212,255,0.4);
+
+  transition:0.3s;
+
+}
+
+
+
+.card:hover{
+
+  box-shadow:0 0 50px #00d4ff;
+
+  transform:translateY(-10px);
+
+}
+
+
+
+.about-box{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:40px;
+
+  padding:60px;
+
+}
+
+
+
+.about-box img{
+
+  width:250px;
+
+  box-shadow:0 0 30px #00d4ff;
+
+}
+
+
+
+form{
+
+  max-width:350px;
+
+  margin:auto;
+
+}
+
+
+
+input,textarea{
+
+  width:100%;
+
+  margin:10px 0;
+
+  padding:10px;
+
+  border-radius:5px;
+
+  border:none;
+
+}
+
+
+
+.footer{text-align:center;padding:20px;}
+
+
+
+#topBtn{
+
+  position:fixed;
+
+  bottom:20px;
+
+  right:20px;
+
+  display:none;
+
+}
+
+
+
+.reveal{
+
+  opacity:0;
+
+  transform:translateY(40px);
+
+  transition:1s;
+
+}
+
+
+
+.reveal.active{
+
+  opacity:1;
+
+  transform:translateY(0);
+
+}
+
+
