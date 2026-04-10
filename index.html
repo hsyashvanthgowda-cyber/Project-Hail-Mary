@@ -56,7 +56,7 @@
 
   <!-- ✅ SCRIPT -->
   <script>
-  const scriptURL = "https://script.google.com/macros/s/AKfycbz3dFzd3f8eFjgup9_x23uJeApmfj2042qAWriLRS22ZnZWuiBpzw8m8-0yuyfyUmY/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbxHDguBsWF4ctkCnwTgkhqUB9fOeg-MoxdDpLilnsNs4fVV3S7YkhviQnnH_XoSAg1GXg/exec";
 
   document.getElementById("form").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -65,8 +65,7 @@
       method: "POST",
       body: new FormData(this)
     })
-    .then(() => {
-  window.location.href = "template.html";
+    .then(() => {alert"u are under 18 years");
 })
     .catch(() => alert("Error"));
   });
